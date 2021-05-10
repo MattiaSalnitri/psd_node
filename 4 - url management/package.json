@@ -1,16 +1,15 @@
 {
-  "name": "SesionApp",
+  "name": "management",
   "version": "1.0.0",
-  "description": "Node app using sessions",
+  "description": "desc",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "author": "Mattia Salnitri",
+  "author": "mattia salnitri",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0",
-    "express-session": "^1.14.2"
+    "file": "^0.2.2"
   }
 }

@@ -9,7 +9,7 @@ function send()
 
     // collect the form data while iterating over the inputs
     var data = {};
-    for (var i = 0, ii = form.length; i < ii; ++i) {
+    for (var i = 0; i < form.length; ++i) {
         var input = form[i];
         if (input.name) {
             data[input.name] = input.value;

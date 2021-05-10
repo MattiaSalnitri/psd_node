@@ -6,14 +6,10 @@ var util = require('util');
 //instantiate express
 var app = express();
 
-//POST
-var bodyParser = require('body-parser');
-
 //parse get url
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
-//parse JSON post
-app.use(bodyParser.json());
 
 app.set('port', (process.env.PORT || 1337));
 

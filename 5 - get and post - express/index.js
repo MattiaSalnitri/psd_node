@@ -5,7 +5,7 @@ var express = require('express');
 var app = express(); 
 
 //part post data
-bodyParser = require('body-parser')
+bodyParser = require('body-parser');
 
 //listen in a specific port
 app.set('port', (process.env.PORT || 1337));
@@ -14,7 +14,7 @@ app.set('port', (process.env.PORT || 1337));
 app.use(bodyParser.urlencoded({extended: true}))
 
 //specify to use body parser as parser for json
-app.use(bodyParser.json())
+app.use(bodyParser.json());
 
 //start listening for GET messages on /
 app.get('/', function(req, res) 

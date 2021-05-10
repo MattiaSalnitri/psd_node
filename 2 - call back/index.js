@@ -11,8 +11,8 @@ var server = http.createServer(
         //HTML content
         res.end('Hello World');
         
-        print(noDataFormat, "the data");
-        //print(coolDataFormat, "the data");
+        //print(noDataFormat, "the data");
+        print(coolDataFormat, "the data");
         //print(coolDataFormat, null);
     });
  
@@ -29,7 +29,7 @@ console.log('Server running at http://127.0.0.1:1337/');
 var print = function(callback, data)
 {
     var err;
-    if (data==null)
+    if (data==null)//here the error happenes!
         err = new Error('My custom error!'); 
     else
         err=null;
@@ -44,9 +44,9 @@ var print = function(callback, data)
 var noDataFormat = function(err, data)
 {
     if (err) 
-        throw err;
-    
-    return(data);
+        console.log("Error occurred");
+    else
+        return(data);
 }
 
 /**
