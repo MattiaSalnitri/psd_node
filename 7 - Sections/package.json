@@ -1,5 +1,5 @@
 {
-  "name": "SesionApp",
+  "name": "sessionapp",
   "version": "1.0.0",
   "description": "Node app using sessions",
   "main": "index.js",
