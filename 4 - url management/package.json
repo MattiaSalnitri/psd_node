@@ -1,15 +1,15 @@
 {
-  "name": "management",
+  "name": "pkg1",
   "version": "1.0.0",
   "description": "desc",
-  "main": "index.js",
+  "main": "index_2.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index_2.js"
   },
-  "author": "mattia salnitri",
+  "author": "Mattia Salnitri",
   "license": "ISC",
   "dependencies": {
-    "file": "^0.2.2"
+    "http": "0.0.1-security"
   }
 }

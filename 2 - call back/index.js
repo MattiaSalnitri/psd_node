@@ -12,8 +12,8 @@ var server = http.createServer(
         res.end('Hello World');
         
         //print(noDataFormat, "the data");
-        print(coolDataFormat, "the data");
-        //print(coolDataFormat, null);
+        //print(coolDataFormat, "the data");
+        print(coolDataFormat, null);
     });
  
 //listen in a specific port
